@@ -1,0 +1,13 @@
+# OS and Editor artifacts
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.download
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local scripts
+verify_site.py

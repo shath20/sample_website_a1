@@ -1,0 +1,407 @@
+/* ==========================================================================
+   A1 STUDIO - Website Makeover Stylesheet
+   Refined, Subtle Luxury Photography Aesthetic
+   ========================================================================== */
+
+:root,
+:root .theme-style--gradient {
+    --color-one: #C8A97E !important;
+    --color-one-rgb: 200, 169, 126 !important;
+    --link-color: #FFFFFF !important;
+    --link-color-hover: #C8A97E !important;
+    --gradient-color-from: #C8A97E !important;
+    --gradient-color-center: #DFD2BE !important;
+    --gradient-color-to: #B89464 !important;
+    --gradient-three: linear-gradient(90deg, #C8A97E 0%, #DFD2BE 50%, #B89464 100%) !important;
+    --gradient-three-180: linear-gradient(180deg, #C8A97E 0%, #DFD2BE 50%, #B89464 100%) !important;
+    --gradient-three-alt: linear-gradient(90deg, #B89464 0%, #DFD2BE 50%, #C8A97E 100%) !important;
+}
+
+/* Background Clean Makeover - No AI rainbow glow blobs */
+body.theme-style--gradient {
+    background-color: #0E0F12 !important;
+    background-image: radial-gradient(ellipse at 50% 0%, #1A1C24 0%, #0E0F12 75%) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 900px !important;
+    color: #DDDDDD !important;
+}
+
+/* Remove unwanted AI-ish textures/overlays on sliders if present */
+.wptb-slider.style15 .wptb-item-layer-two,
+.wptb-slider.style15 .wptb-item-layer-three {
+    opacity: 0.15 !important;
+}
+
+/* 1. REMOVE NUMBERING IN CARDS */
+.wptb-item--count,
+.wptb-icon-box7 .wptb-item--count,
+.wptb-packages2 .wptb-item--count,
+.text-outline {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* 2. REMOVE SLIDING ANIMATION FOR CARDS */
+.wptb-icon-box7,
+.wptb-packages2,
+.wptb-office-address .wptb-icon-box1,
+.col-md-4.pd-left-25.pd-right-25 {
+    -webkit-animation: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* 3. REMOVE BULLET SHAPE IN CSS */
+.wptb-list1 .wptb--item .wptb-item--icon,
+.theme-style--gradient .wptb-list1 .wptb--item .wptb-item--icon,
+.wptb-packages2 .wptb-item--inner .wptb-list1 .wptb--item .wptb-item--icon {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 10px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.wptb-list1 .wptb--item .wptb-item--icon svg,
+.wptb-packages2 .wptb-item--inner .wptb-list1 .wptb--item .wptb-item--icon svg {
+    width: 14px !important;
+    height: auto !important;
+}
+
+.wptb-list1 .wptb--item .wptb-item--icon svg path,
+.wptb-packages2 .wptb-item--inner .wptb-list1 .wptb--item .wptb-item--icon svg path {
+    fill: var(--color-one) !important;
+}
+
+/* Remove bullets in complementary boxes */
+.note {
+    border: 1px solid rgba(200, 169, 126, 0.22) !important;
+    border-radius: 10px !important;
+    padding: 16px 20px !important;
+    color: #E2DBD2 !important;
+    background-color: rgba(200, 169, 126, 0.04) !important;
+}
+
+.comp_head {
+    text-align: center !important;
+    background-color: rgba(200, 169, 126, 0.16) !important;
+    color: #C8A97E !important;
+    border-radius: 6px !important;
+    margin-bottom: 12px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    padding: 5px 12px !important;
+}
+
+.note ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+.note ul li {
+    list-style: none !important;
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 6px !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    color: #D6CEC5 !important;
+}
+
+.note ul li::before,
+.note ul li::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* 4. SUBTLE, REFINED COLOR STYLES */
+/* Services Section */
+.wptb-services-one {
+    background-color: transparent !important;
+}
+
+.wptb-heading-two .wptb-item--subtitle,
+.wptb-heading .wptb-item--subtitle {
+    color: var(--color-one) !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+
+.wptb-heading-two .wptb-item--title span,
+.wptb-heading .wptb-item--title span {
+    color: var(--color-one) !important;
+}
+
+.wptb-heading-two .wptb-item--description,
+.wptb-heading .wptb-item--description {
+    color: #9DA3AF !important;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px !important;
+    line-height: 26px !important;
+}
+
+/* Service Cards */
+.wptb-icon-box7 {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 12px !important;
+    padding: 36px 30px !important;
+    margin-bottom: 30px !important;
+    transition: all 0.35s ease !important;
+}
+
+.wptb-icon-box7:hover,
+.wptb-icon-box7.active {
+    background: rgba(200, 169, 126, 0.05) !important;
+    border-color: rgba(200, 169, 126, 0.35) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+.wptb-icon-box7 .wptb-item--title a {
+    color: #FFFFFF !important;
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em;
+    transition: color 0.3s ease !important;
+}
+
+.wptb-icon-box7:hover .wptb-item--title a {
+    color: var(--color-one) !important;
+}
+
+.wptb-icon-box7 .wptb-item--title::after {
+    background-color: rgba(200, 169, 126, 0.25) !important;
+    height: 1px !important;
+}
+
+.wptb-icon-box7:hover .wptb-item--title::after,
+.wptb-icon-box7.active .wptb-item--title::after {
+    background-color: var(--color-one) !important;
+}
+
+.wptb-icon-box7 .wptb-item--description {
+    color: #9DA3AF !important;
+    font-size: 15px !important;
+    line-height: 25px !important;
+}
+
+.wptb-icon-box7 .wptb-item--icon svg path {
+    fill: var(--color-one) !important;
+}
+
+/* Package Cards */
+.wptb-packages2 {
+    margin-bottom: 60px !important;
+}
+
+.wptb-packages2 .wptb-item--inner {
+    background: #14151B !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.wptb-packages2:hover .wptb-item--inner {
+    border-color: rgba(200, 169, 126, 0.35) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.wptb-packages2 .wptb-item--subtitle {
+    color: #FFFFFF !important;
+    font-size: 34px !important;
+    font-weight: 600 !important;
+}
+
+.wptb-packages2 .wptb-item--description {
+    color: var(--color-one) !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+}
+
+.wptb-packages2 .wptb-item--tag {
+    background-color: var(--color-one) !important;
+    color: #0E0F12 !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+}
+
+.wptb-packages2 .wptb-item--button .btn {
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.wptb-packages2:hover .wptb-item--button .btn,
+.wptb-packages2.active .wptb-item--button .btn {
+    background-color: var(--color-one) !important;
+    color: #0E0F12 !important;
+    border-color: var(--color-one) !important;
+}
+
+/* Package Filter Buttons */
+.portfolio-filters-content .filters-button-group {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.portfolio-filters-content .filters-button-group .button {
+    color: #9DA3AF !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.portfolio-filters-content .filters-button-group .button.is-checked,
+.portfolio-filters-content .filters-button-group .button:hover {
+    color: var(--color-one) !important;
+}
+
+.portfolio-filters-content .filters-button-group .button.is-checked::after {
+    border-color: var(--color-one) transparent transparent transparent !important;
+}
+
+/* Projects Section */
+.wptb-project .wptb-item--meta h4 a {
+    color: #FFFFFF !important;
+    transition: color 0.3s ease !important;
+}
+
+.wptb-project .wptb-item--meta h4 a:hover {
+    color: var(--color-one) !important;
+}
+
+.wptb-project .wptb-item--meta p {
+    color: var(--color-one) !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Testimonials */
+.wptb-testimonial1 .wptb-item--icon svg path {
+    fill: var(--color-one) !important;
+    opacity: 0.35 !important;
+}
+
+.wptb-testimonial1 .wptb-item--meta-rating i {
+    color: var(--color-one) !important;
+}
+
+.wptb-testimonial1 .wptb-item--description {
+    color: #E2E4E9 !important;
+    font-size: 26px !important;
+    line-height: 42px !important;
+    font-weight: 300 !important;
+}
+
+.wptb-testimonial1 .wptb-item--designation {
+    color: var(--color-one) !important;
+}
+
+/* Contact Cards */
+.wptb-office-address .wptb-icon-box1 {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+    margin-bottom: 25px !important;
+    transition: all 0.3s ease !important;
+}
+
+.wptb-office-address .wptb-icon-box1:hover {
+    border-color: rgba(200, 169, 126, 0.35) !important;
+    background: rgba(200, 169, 126, 0.04) !important;
+}
+
+.wptb-office-address .wptb-icon-box1 .wptb-item--icon {
+    color: var(--color-one) !important;
+}
+
+.wptb-office-address .wptb-icon-box1 .wptb-item--title {
+    color: #FFFFFF !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+}
+
+.wptb-office-address .wptb-icon-box1 .wptb-item--description {
+    color: #9DA3AF !important;
+    font-size: 14px !important;
+}
+
+.wptb-office-address .wptb-icon-box1 .wptb-item--link {
+    color: var(--color-one) !important;
+    font-weight: 500 !important;
+}
+
+/* Footer & Tag */
+.theme-style--gradient .footer {
+    background-color: #0A0B0E !important;
+}
+
+.theme-style--gradient .footer.style1::before {
+    background-color: rgba(200, 169, 126, 0.35) !important;
+    height: 1px !important;
+}
+
+.footer .widget-title {
+    color: #D2D5DC !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    font-size: 16px !important;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+    background-color: #08090B !important;
+    padding: 25px 0 !important;
+}
+
+.footer-bottom .copyright p {
+    color: #7A808E !important;
+    font-size: 13px !important;
+    margin-bottom: 0px !important;
+}
+
+.footer-bottom .copyright a {
+    color: var(--color-one) !important;
+}
+
+/* Made by Mowshi Tag */
+.mowshi-tag {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 6px;
+    font-style: normal;
+}
+
+/* Preloader subtle gold */
+#preloader {
+    background-color: #0E0F12 !important;
+}
+
+/* Pointer subtle styling */
+.pointer {
+    background: var(--color-one) !important;
+}
